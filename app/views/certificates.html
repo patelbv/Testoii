@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+<div class="phase-banner">
+  <p>
+    <strong class="phase-tag">ALPHA</strong>
+    <span>This is a new service - your <a href="#">feedback</a> will help us to improve it.</span>
+  </p>
+</div>
+
+<a href="carechoices.html" class="link-back">Back</a>
+
+      <h1 class="heading-xlarge">
+        Certificates
+      </h1>
+        <p>
+  You must have a valid NHS certificate which does not exprire in the next 2 years.
+</p>
+
+</div>
+     <p>
+      <details>
+
+ 			 <summary><span class="summary">Help with certificates</span></summary>
+
+ 			 <div class="panel panel-border-narrow">
+
+  		  <p>
+ 		     If you're not sure about your nationality, try to find out from an official document like a passport or national ID card.
+   		</p>
+
+   	 <p>
+   		   We need to know your nationality so we can work out which elections you're entitled to vote in. If you can't provide your nationality, you'll have to send copies of identity documents through the post.
+  		  </p>
+
+  			</div>
+
+			</details>
+  		    </p>
+      
+      <form>
+  <div class="form-group">
+    <fieldset class="inline">
+
+      <legend>
+        <h1 class="heading-medium">
+          Do you already have a valid NHS certificate?
+        </h1>
+      </legend>
+
+      <div class="multiple-choice">
+        <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+        <label for="radio-inline-1">Yes</label>
+      </div>
+      <div class="multiple-choice">
+        <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+        <label for="radio-inline-2">No</label>
+      </div>
+
+    </fieldset>
+  </div>
+</form>
+      
+     <p>
+      	<div class="form-group">
+ 	 		<label class="form-label" for="file-input">
+    		Upload a file
+  			</label>
+  			<input type="file" id="file-input">
+		</div>
+      </p>
+      
+      <p>
+   		<label class="form-label" for="textarea">
+  		Why can't you provide a National Insurance number?
+		</label>
+		<textarea class="form-control form-control-3-4" name="textarea" id="textarea" rows="5"></textarea>
+      </p>
+      
+      
+     <p>
+		<input class="button" type="submit" value="Save and continue">
+	</p>
+		
+    </div>
+  </div>
+</main>
+
+{% endblock %}
+
+
